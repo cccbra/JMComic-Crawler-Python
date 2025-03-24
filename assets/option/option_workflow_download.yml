@@ -28,9 +28,3 @@ plugins:
       kwargs:
         username: ${JM_USERNAME}
         password: ${JM_PASSWORD}
-
-  after_photo:
-    - plugin: img2pdf
-      kwargs:
-        pdf_dir: ${JM_DOWNLOAD_DIR} # pdf存放文件夹
-        filename_rule: Aname # pdf命名规则，A代表album, name代表使用album.name也就是本子名称
