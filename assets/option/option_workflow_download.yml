@@ -8,9 +8,9 @@ client:
   domain:
     html: [ jmcomic1.me, jmcomic.me ]
 
-#download:
-  #image:
-    #suffix: .jpg
+download:
+  image:
+    suffix: .jpg
 # 插件配置
 plugins:
   after_init:
