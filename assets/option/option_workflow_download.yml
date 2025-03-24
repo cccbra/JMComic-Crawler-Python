@@ -10,7 +10,7 @@ client:
 
 download:
   image:
-    suffix: .jpg
+    suffix: .png
 # 插件配置
 plugins:
   after_init:
@@ -29,19 +29,8 @@ plugins:
         username: ${JM_USERNAME}
         password: ${JM_PASSWORD}
 
-  #after_album:
-    #- plugin: img2pdf
-      #kwargs:
-        #pdf_dir: ${JM_DOWNLOAD_DIR} # pdf存放文件夹
-        #filename_rule: Aname # pdf命名规则，A代表album, name代表使用album.name也就是本子名称
- after_photo:
-    - plugin: j2p # 图片合并插件，可以将下载下来的jpg图片合成为一个pdf插件
-      # 请注意⚠ 该插件的使用前提是，下载下来的图片是jpg图片
-      # 因此，使用该插件前，需要有如下配置:（下载图片格式转为jpg，上文有解释过此配置）
-      # download:
-      #   image:
-      #     suffix: .jpg
+  after_album:
+    - plugin: img2pdf
       kwargs:
         pdf_dir: ${JM_DOWNLOAD_DIR} # pdf存放文件夹
-        filename_rule: Pid # pdf命名规则
-        quality: 100 # pdf质量，0 - 100
+        filename_rule: Aname # pdf命名规则，A代表album, name代表使用album.name也就是本子名称
