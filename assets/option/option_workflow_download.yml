@@ -34,3 +34,9 @@ plugins:
         password: ${EMAIL_PASS}
         title: ${EMAIL_TITLE}
         content: ${EMAIL_CONTENT}
+  
+  after_album:
+    - plugin: img2pdf
+      kwargs:
+        pdf_dir: D:\灵梦御所\jmcomic\JMComic-Crawler-Python-2.5.32 # pdf存放文件夹
+        filename_rule: Aname # pdf命名规则，A代表album, name代表使用album.name也就是本子名称
