@@ -10,7 +10,7 @@ client:
 
 #download:
   #image:
-    #suffix: .png
+    #suffix: .jpg
 # 插件配置
 plugins:
   after_init:
