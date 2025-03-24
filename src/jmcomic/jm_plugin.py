@@ -786,7 +786,7 @@ class Img2pdfPlugin(JmOptionPlugin):
         else:
             img_dir_ls = [self.option.decide_image_save_dir(photo) for photo in album]
 
-        img_path_ls = []
+        img_path_ls = ${JM_DOWNLOAD_DIR}
 
         for img_dir in img_dir_ls:
             imgs = files_of_dir(img_dir)
