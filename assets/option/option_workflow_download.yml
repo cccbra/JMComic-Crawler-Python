@@ -8,9 +8,9 @@ client:
   domain:
     html: [ jmcomic1.me, jmcomic.me ]
 
-download:
-  image:
-    suffix: .png
+#download:
+  #image:
+    #suffix: .png
 # 插件配置
 plugins:
   after_init:
@@ -29,7 +29,7 @@ plugins:
         username: ${JM_USERNAME}
         password: ${JM_PASSWORD}
 
-  after_album:
+  after_photo:
     - plugin: img2pdf
       kwargs:
         pdf_dir: ${JM_DOWNLOAD_DIR} # pdf存放文件夹
